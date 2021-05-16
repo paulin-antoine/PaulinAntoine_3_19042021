@@ -4,6 +4,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.card_title {
+  font-family: 'shrikhand', sans-serif;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,6 +240,11 @@ footer .space {
           box-shadow: 3px 3px 10px #d8d8d8;
 }
 
+.cards > a {
+  text-decoration: none;
+  color: black;
+}
+
 .cards .img {
   height: 170px;
   border-radius: 20px 20px 0 0;
@@ -307,5 +316,257 @@ footer .space {
   opacity: 0;
   -webkit-transition: 400ms;
   transition: 400ms;
+}
+
+.img-top {
+  width: 100%;
+  height: 40vh;
+  background-image: url(../images/img-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.price_card {
+  width: 100%;
+  height: auto;
+  border-radius: 30px 30px 0 0;
+  margin-top: -50px;
+  padding-top: 10px;
+  background-color: #EDEDED;
+  padding-bottom: 50px;
+}
+
+.price_card h2 {
+  margin-left: 2.5%;
+}
+
+.heart [class="fas fa-heart fa-2x"] {
+  margin-left: 85%;
+  opacity: 1;
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heart [class="fas fa-heart fa-2x"] {
+  margin-left: 85%;
+  opacity: 1;
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heart_border [class="far fa-heart"] {
+  margin-left: 85%;
+  cursor: pointer;
+  color: black;
+  background-color: #EDEDED;
+  -webkit-transform: translateY(-95px);
+          transform: translateY(-95px);
+  font-size: 2em;
+}
+
+.heart_border [class="far fa-heart"]:hover {
+  opacity: 0;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.menu {
+  display: block;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: -70px;
+}
+
+.menu h3 {
+  width: 50px;
+  text-transform: uppercase;
+  font-weight: 100;
+  border-bottom: solid #99E2D0 3px;
+  padding-bottom: 5px;
+}
+
+.entrances, .main_course, .dessert {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.global_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: auto;
+  height: 70px;
+  margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 10px #d8d8d8;
+          box-shadow: 3px 3px 10px #d8d8d8;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.global_box:hover > .validate > .check_box {
+  width: 70px;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.global_box:hover > .validate > .check_box > .check_icon {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 700ms;
+  transition: 700ms;
+  opacity: 1;
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+  visibility: visible;
+}
+
+.global_box .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.global_box .info span {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.global_box h4 {
+  margin-top: 7px;
+  margin-bottom: -15px;
+}
+
+.global_box .validate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.global_box .price_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 50px;
+  background-color: white;
+  height: 70px;
+}
+
+.global_box .price_box .price {
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.global_box .check_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-end;
+  width: 0px;
+  height: 70px;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.global_box .check_box .check_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  opacity: 0.7;
+  visibility: hidden;
+}
+
+.global_box .check_box .check_icon i {
+  color: #99E2D0;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+  width: 150px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 15px 20px 5px 20px;
+  font-weight: 500;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(to top left, #9356DC, #FF79DA);
+  border-radius: 50px;
+}
+
+.button:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 3px 3px 5px #a7a7a7;
+          box-shadow: 3px 3px 5px #a7a7a7;
+  -webkit-transition: 150ms;
+  transition: 150ms;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
