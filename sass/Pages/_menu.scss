@@ -1,3 +1,14 @@
+.arrow {
+    display: flex;
+    align-self: center;
+    position: absolute;
+    left: 25px;
+
+    i {
+        font-size: 1.5em;
+        color: black;
+    }
+}
 .img-top {
     width: 100%;
     height: 40vh;
@@ -6,7 +17,6 @@
     background-size: cover;
     background-position: center ;
 }
-
 .price_card {
     width: 100%;
     height: auto;
@@ -16,36 +26,46 @@
     background-color: #EDEDED; 
     padding-bottom: 50px;
     
+    
     h2 { 
-        margin-left: 2.5%;
+        display: flex;
+        width: 230px;
+        margin-left: 10px;
+        flex-wrap: nowrap;
+        
        
+    }
+
+    .card_heart_content {
+        display: flex;
+        width: 95%;
+        margin: auto;
+        justify-content: space-between;
+        margin-bottom: 100px;
     }
 }
 
+.heart_box {
+    display: flex;
+    align-items: center;
+    
+}
+
 .heart [class="fas fa-heart fa-2x"] {
-    margin-left: 85%;
+    
     opacity: 1;
-    transform: translateY(-60px);
     background: -webkit-linear-gradient(#9356DC, #FF79DA );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;    
 }
 
-.heart [class="fas fa-heart fa-2x"] {
-    margin-left: 85%;
-    opacity: 1;
-    transform: translateY(-60px);
-    background: -webkit-linear-gradient(#9356DC, #FF79DA );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;   
-}
+
 
 .heart_border [class="far fa-heart"] {
-    margin-left: 85%;
+    transform: translateX(-32px);
     cursor: pointer;
     color: black;
     background-color: #EDEDED;
-    transform: translateY(-95px);
     font-size: 2em;
 
     &:hover {
@@ -67,6 +87,8 @@
         font-weight: 100;
         border-bottom: solid #99E2D0 3px;
         padding-bottom: 5px;
+        margin-bottom: 25px;
+        
     }
 } 
 
@@ -74,6 +96,7 @@
     display: block;
     width: 90%;
     margin: auto;
+    
 }
 
 .global_box {
@@ -90,6 +113,9 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    animation-name: appear;
+    animation-duration: 600ms;
+    animation-fill-mode: both;
 
     &:hover > .validate > .check_box {
         width: 70px;
@@ -103,7 +129,7 @@
         transition-delay: 100ms;
         visibility: visible;
     }
-
+    
 .info {
     display: flex;
     flex-direction: column;
@@ -186,6 +212,7 @@
     margin: auto;
     margin-top: 10px;
     padding: 15px 20px 5px 20px;
+    font-size: 1em;
     font-weight: 500;
     background-image: linear-gradient(to top left, #9356DC, #FF79DA );
     border-radius: 50px;
@@ -201,5 +228,72 @@
         color:white;
     }
 }
+
+@keyframes appear {
+
+    0%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
     
-  
+    100%{
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
+
+.anim_2 {
+    animation-delay: 150ms;
+}
+.anim_3 {
+    animation-delay: 300ms;
+}
+.anim_4 {
+    animation-delay: 450ms;
+}
+.anim_5 {
+    animation-delay: 600ms;
+}
+.anim_6 {
+    animation-delay: 750ms;
+}
+.anim_7 {
+    animation-delay: 900ms;
+}
+.anim_8 {
+    animation-delay: 1050ms;
+}
+.anim_9 {
+    animation-delay: 1200ms;
+}
+
+@media screen and (min-width: 750px) {
+
+    .price_card {
+        display: block;
+        width: 70%;
+        margin: auto;
+        margin-top: -50px;
+        
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+    
+    .price_card {
+        display: block;
+        width: 95%;
+        margin: auto;
+        margin-top: -50px;
+        
+    }
+   
+    .menu {
+        display: grid;
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        grid-template-columns: repeat(auto-fill, 33%)
+    }
+}

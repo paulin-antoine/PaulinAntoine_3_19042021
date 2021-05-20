@@ -1,11 +1,13 @@
 footer {
     display: flex;
     margin: 0;
-    padding-top: 10px;
+    padding-top: 15px;
     height: auto;
     background-color: #515151;
 
     .footer_info {
+        display: flex;
+        flex-direction: column;
         margin-left: 15px;
     }
     
@@ -21,4 +23,43 @@ footer {
         padding-left: 7px;
     }
     
+}
+
+@media screen and (min-width: 700px) {
+
+    footer {
+        
+        justify-content: center;
+
+        .footer_info {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            
+
+        }
+
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    footer {
+        
+        justify-content: center;
+
+        .footer_info {
+            width: 1150px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 0;
+
+        }
+
+}
 }
