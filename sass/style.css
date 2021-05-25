@@ -641,12 +641,9 @@ footer .space {
 }
 
 .img-top {
+  display: block;
   width: 100%;
   height: 40vh;
-  background-image: url(../images/img-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .price_card {
@@ -748,6 +745,7 @@ footer .space {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
   background-color: white;
   border-radius: 15px;
   -webkit-box-shadow: 3px 3px 10px #d8d8d8;
@@ -808,6 +806,10 @@ footer .space {
 .global_box h4 {
   margin-top: 7px;
   margin-bottom: -15px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .global_box .validate {
@@ -1004,5 +1006,41 @@ footer .space {
     -ms-grid-columns: (33%)[auto-fill];
         grid-template-columns: repeat(auto-fill, 33%);
   }
+}
+
+.img-top--image-1 {
+  background-image: url(../images/img-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-top--image-2 {
+  background-image: url(../images/img-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main_course--marg_modif {
+  margin-top: 0;
+}
+
+.dessert--marg_modif {
+  margin-top: 0;
+}
+
+.img-top--image-3 {
+  background-image: url(../images/img-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-top--image-4 {
+  background-image: url(../images/img-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 /*# sourceMappingURL=style.css.map */
