@@ -27,12 +27,12 @@
     padding-bottom: 50px;
     
     
-    h2 { 
+    .card_title { 
         display: flex;
         width: 230px;
         margin-left: 10px;
         flex-wrap: nowrap;
-        
+        font-size: 1.5em;
        
     }
 
@@ -42,6 +42,7 @@
         margin: auto;
         justify-content: space-between;
         margin-bottom: 100px;
+        margin-top: 20px;
     }
 }
 
@@ -58,7 +59,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;    
 }
-
 
 
 .heart_border [class="far fa-heart"] {
@@ -136,13 +136,15 @@
     flex-direction: column;
     width: 100%;
     margin-left: 10px;
+    margin-bottom: 20px;
+    
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 
     span {
-        display: inline-block;
-        width: 100%;
+        display: block;
+        width: 100%;    
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -150,9 +152,8 @@
 }
 
     h4 {
-        margin-top: 7px;
-        margin-bottom: -15px;
         width: 100%;
+        margin-bottom: 10px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -299,6 +300,6 @@
         width: auto;
         height: auto;
         margin-left: auto;
-        grid-template-columns: repeat(auto-fill, 33%)
+        grid-template-columns: (33% 33% 33%)
     }
 }

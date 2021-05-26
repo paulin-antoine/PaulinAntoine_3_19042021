@@ -505,8 +505,6 @@ footer .space {
   width: 100%;
   height: auto;
   padding-bottom: 50px;
-  -ms-grid-columns: (100%)[autofill];
-      grid-template-columns: repeat(autofill, 100%);
   grid-gap: 20px;
 }
 
@@ -591,6 +589,7 @@ footer .space {
   -webkit-transform: translateY(-92px);
           transform: translateY(-92px);
   font-size: 2em;
+  font-weight: lighter;
 }
 
 .cards .heart_border [class="far fa-heart"]:hover {
@@ -656,7 +655,7 @@ footer .space {
   padding-bottom: 50px;
 }
 
-.price_card h2 {
+.price_card .card_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -664,6 +663,7 @@ footer .space {
   margin-left: 10px;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  font-size: 1.5em;
 }
 
 .price_card .card_heart_content {
@@ -676,6 +676,7 @@ footer .space {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 100px;
+  margin-top: 20px;
 }
 
 .heart_box {
@@ -790,13 +791,14 @@ footer .space {
           flex-direction: column;
   width: 100%;
   margin-left: 10px;
+  margin-bottom: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .global_box .info span {
-  display: inline-block;
+  display: block;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -804,9 +806,8 @@ footer .space {
 }
 
 .global_box h4 {
-  margin-top: 7px;
-  margin-bottom: -15px;
   width: 100%;
+  margin-bottom: 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1003,8 +1004,8 @@ footer .space {
     width: auto;
     height: auto;
     margin-left: auto;
-    -ms-grid-columns: (33%)[auto-fill];
-        grid-template-columns: repeat(auto-fill, 33%);
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
   }
 }
 

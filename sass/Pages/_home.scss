@@ -5,6 +5,7 @@
     margin-top: -15px;
     justify-content: center;
     align-items: center;
+
     .map_zone {
         padding-top: 15px;
         margin-right: 10px;
@@ -44,6 +45,7 @@
         font-weight: 500;
         background-image: linear-gradient(to top left, #9356DC, #FF79DA );
         border-radius: 50px;
+
         &:hover {
             filter: brightness(1.1);
             box-shadow: 3px 3px 5px rgb(167, 167, 167);
@@ -87,6 +89,7 @@
         box-shadow: 3px 3px 10px rgb(216, 216, 216);
         height: 75px;
         border-radius: 20px;
+        
         &:last-child{
             background-color: rgba(147, 86, 220, 0.1) ;
             
