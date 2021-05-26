@@ -358,6 +358,8 @@ footer .space {
   margin-top: 10px;
   padding: 15px 20px 5px 20px;
   font-weight: 500;
+  -webkit-box-shadow: 2px 2px 3px #a7a7a7;
+          box-shadow: 2px 2px 3px #a7a7a7;
   background-image: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
   background-image: linear-gradient(to top left, #9356DC, #FF79DA);
   border-radius: 50px;
@@ -897,6 +899,8 @@ footer .space {
   padding: 15px 20px 5px 20px;
   font-size: 1em;
   font-weight: 500;
+  -webkit-box-shadow: 2px 2px 3px #a7a7a7;
+          box-shadow: 2px 2px 3px #a7a7a7;
   background-image: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
   background-image: linear-gradient(to top left, #9356DC, #FF79DA);
   border-radius: 50px;
