@@ -2,6 +2,7 @@ footer {
     display: flex;
     margin: 0;
     padding-top: 15px;
+    padding-bottom: 15px;
     height: auto;
     background-color: #515151;
 
@@ -18,6 +19,7 @@ footer {
 
     p {
         color: white;
+        margin-bottom: 0;
     }
     .space {
         padding-left: 7px;
@@ -37,9 +39,6 @@ footer {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
-            
-
         }
 
 }
@@ -58,8 +57,11 @@ footer {
             flex-direction: row;
             justify-content: space-between;
             margin-left: 0;
-
         }
 
+        p {
+            margin-bottom: 15px;
+        }
 }
+
 }

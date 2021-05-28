@@ -16,7 +16,6 @@
     height: 40vh;
 }
 
-
 .price_card {
     width: 100%;
     height: auto;
@@ -25,8 +24,7 @@
     padding-top: 10px;
     background-color: #EDEDED; 
     padding-bottom: 50px;
-    
-    
+     
     .card_title { 
         display: flex;
         width: 230px;
@@ -56,10 +54,9 @@
     
     opacity: 1;
     background: -webkit-linear-gradient(#9356DC, #FF79DA );
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;    
 }
-
 
 .heart_border [class="far fa-heart"] {
     transform: translateX(-32px);
