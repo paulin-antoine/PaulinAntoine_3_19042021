@@ -532,7 +532,7 @@ footer a {
 .heart [class="fas fa-heart fa-2x"] {
   opacity: 1;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
