@@ -291,10 +291,6 @@ footer a {
   border-radius: 20px;
 }
 
-.fonctioning_list .list:last-child {
-  background-color: rgba(147, 86, 220, 0.1);
-}
-
 .fonctioning_list .list:hover {
   background-color: rgba(147, 86, 220, 0.1);
 }
@@ -325,10 +321,6 @@ footer a {
 .fonctioning_list .phone_icon [class="fas fa-mobile-alt"] {
   padding: 4px;
   padding-right: 20px;
-}
-
-.fonctioning_list .store_icon [class="fas fa-store"] {
-  color: #9356DC;
 }
 
 @media screen and (min-width: 1000px) {

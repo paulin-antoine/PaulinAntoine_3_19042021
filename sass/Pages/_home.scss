@@ -91,10 +91,6 @@
         height: 75px;
         border-radius: 20px;
         
-        &:last-child {
-            background-color: rgba(147, 86, 220, 0.1) ;
-            
-        }
         &:hover {
             background-color: rgba(147, 86, 220, 0.1);
         }
@@ -125,10 +121,6 @@
     .phone_icon [class="fas fa-mobile-alt"] {
         padding: 4px;
         padding-right: 20px;
-    }
-    .store_icon [class="fas fa-store"]{
-        color: #9356DC;
-        
     }
 
 }
