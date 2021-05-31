@@ -24,6 +24,12 @@ footer {
     .space {
         padding-left: 7px;
     }
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin-top: 1.12em;
+    }
     
 }
 
@@ -61,6 +67,10 @@ footer {
 
         p {
             margin-bottom: 15px;
+        }
+
+        a {
+            margin-top: 0;
         }
 }
 
