@@ -98,6 +98,9 @@
         &:hover {
             background-color: rgba(147, 86, 220, 0.1);
         }
+        &:hover i {
+            color: #9356DC;
+        }
     }
 
     .number {

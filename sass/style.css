@@ -299,6 +299,10 @@ footer a {
   background-color: rgba(147, 86, 220, 0.1);
 }
 
+.fonctioning_list .list:hover i {
+  color: #9356DC;
+}
+
 .fonctioning_list .number {
   display: flex;
   justify-content: center;
